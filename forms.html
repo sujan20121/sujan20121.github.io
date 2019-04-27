@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-group">
+        <h1>Course Sign Up Page</h1>
+        <p>Please Note: First Name, Last Name, Password, and Email are required!</p>
+        <form class="" action="https://www.google.com" method="get" oninput="result.value=parseInt(a.value)">
+          <label for="fn">First Name*:</label>
+          <input id="fn" type="text" name="" class="form-control" placeholder="First Name" required>
+          <label for="ln">Last Name*:</label>
+          <input id="ln" type="text" name="" class="form-control" placeholder="Last Name" required>
+          <p></p>
+          <label for="em">Email*:</label>
+          <input type="email" name="" class="form-control" placeholder="name@email.com" required>
+          <label for="pw">Password*:</label>
+          <input type="password" name="" class="form-control" value="" required>
+
+          <p>Are you over 18?</p>
+          <label for="y">Yes:</label>
+          <input id="y" type="radio" name="btn" value="">
+          <label for="n">No:</label>
+          <input id="n" type="radio" name="btn" value="">
+          <p></p>
+          Please select your High School Grade!
+          <p></p>
+          0
+          <input id="a" type="range" name="a" value="50">
+          100 = <output name="result" for="a"></output>
+          <p>Payment Type:</p>
+          <select name="Payment">
+            <option value="1">Credit Card</option>
+            <option value="2">Debit Card</option>
+            <option value="3">PayPal</option>
+          </select>
+
+          <p></p>
+          <textarea name="name" rows="8" cols="80" placeholder="Tell us what your expectations are with this Course"></textarea>
+          <p></p>
+          <input type="submit" class="btn btn-success btn btn-primary btn-lg active" name="" value="Sign Up!">
+
+        </form>
+      </div>
+    </div>
+
+
+  </body>
+</html>
