@@ -7,20 +7,34 @@
     <title>Forms Example</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
   </head>
-  <body style="background-color:#e5e372;">
+  <body style="background-image: linear-gradient(#ae9cf4,#ffec1e);">
+
+    <style>
+      label.age{
+        padding-left: 25px;
+        color: #3808dd;
+        text-align: justify;
+        font-size: 125%;
+      }
+      #age_bau{
+        border: solid #bff2a9;
+      }
+    </style>
+
     <div class="container-fluid">
       <div class="form-group">
         <!-- <img src="https://ichef.bbci.co.uk/news/660/cpsprodpb/1392A/production/_106107108_gettyimages-513452022.jpg"  style="width:100%;height:auto;"> -->
       <h1 style="font-size:5vw" align="center">Course Sign Up Page</h1>
 
-
-
         <form class="" action="https://www.google.com" method="get" oninput="result.value=parseInt(a.value)">
           <div class="" align="center">
             <p style="color:#1c056b">Please Note: First Name, Last Name, Password, and Email are required!</p>
             <label for="fn">First Name*:</label>
-            <input id="fn"  type="text" name="" class="form-control;width:auto;" placeholder="First Name" required>
+            <input id="fn" type="text" name="" class="form-control;width:auto;" placeholder="First Name" required>
             <label for="ln">Last Name*:</label>
             <input id="ln" type="text" name="" class="form-control;width:auto;" placeholder="Last Name" required>
             <p></p>
@@ -29,20 +43,22 @@
             <label for="pw">Password*:</label>
             <input type="password" name="" class="form-control;width:auto;" value="" required>
 
-            <p>Are you over 18?
-              <label for="y">Yes:</label>
+            <p id="age_bau">Are you over 18?
+              <label class="age"for="y">Yes:</label>
               <input id="y" type="radio" name="btn" value="">
-              <label for="n">No:</label>
+              <label class="age"for="n">No:</label>
               <input id="n" type="radio" name="btn" value="">
+            </p>
 
+            <p id="age_bau">
+              Please select your High School Grade!
+              0
+              <input id="a" type="range" name="a" value="50">
+              100 = <output name="result" for="a"></output>
             </p>
 
             <p></p>
-            Please select your High School Grade!
-            <p></p>
-            0
-            <input id="a" type="range" name="a" value="50">
-            100 = <output name="result" for="a"></output>
+
             <p></p>
             <p>Payment Type:
             <select name="Payment">
@@ -51,16 +67,11 @@
               <option value="3">PayPal</option>
             </select>
             </p>
-
             <p></p>
-            <textarea name="name" class="form-control;width:auto;" rows="8" cols="80" placeholder="Tell us what your expectations are with this Course"></textarea>
+            <textarea name="name" class="form-control;width:auto;" rows="8" cols="60" placeholder="Tell us what your expectations are with this Course"></textarea>
             <p></p>
             <input type="submit" class="btn btn-success btn btn-primary btn-lg active" name="" value="Sign Up!">
-
           </div>
-
-
-
         </form>
       </div>
     </div>
