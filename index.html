@@ -1,90 +1,76 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms Example</title>
+
+    <title>Assignment 2</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-
+    <link rel="stylesheet" href="forms2.css">
   </head>
-  <body style="background-image: linear-gradient(#ae9cf4,#ffec1e);">
+  <body style="background-image: linear-gradient(#ee9cf4,#ffec1e);">
+    <h1>Welcome</h1>
+    <form name="myform" class="" action="index.html" method="post">
 
-    <style>
-      label.age{
-        padding-left: 25px;
-        color: #3808dd;
-        text-align: justify;
-        font-size: 125%;
-      }
-      #age_bau{
-        border: solid #bff2a9;
-      }
-      p.second{
-        font-size: auto;
-      }
-    </style>
-
-    <div class="container-fluid">
-      <div class="form-group">
-        <!-- <img src="https://ichef.bbci.co.uk/news/660/cpsprodpb/1392A/production/_106107108_gettyimages-513452022.jpg"  style="width:auto;height:auto;"> -->
-      <h1 style="font-size:5vw" align="center">Course Sign Up Page</h1>
-
-        <form class="" action="https://www.google.com" method="get" oninput="result.value=parseInt(a.value)">
-          <div class="" align="center">
-            <p class="second" style="color:#1c056b">Please Note: First Name, Last Name, Password, and Email are required!</p>
-            <label style="font-size: auto"for="fn">First Name*:</label>
-            <input id="fn" type="text" name="" class="form-control;width:auto;" placeholder="First Name" required>
-            <label style="font-size: auto" for="ln">Last Name*:</label>
-            <input id="ln" type="text" name="" class="form-control;width:auto;" placeholder="Last Name" required>
-            <p></p>
-            <label style="font-size: auto" for="em">Email*:</label>
-            <input type="email" name="" class="form-control;width:auto;" placeholder="name@email.com" required>
-            <label style="font-size: auto" for="pw">Password*:</label>
-            <input type="password" name="" class="form-control;width:auto;" value="" required>
-
-            <p style="font-size: auto" id="age_bau">Are you over 18?
-              <label class="age"for="y">Yes:</label>
-              <input id="y" type="radio" name="btn" value="">
-              <label class="age"for="n">No:</label>
-              <input id="n" type="radio" name="btn" value="">
-            </p>
-
-            <p style="font-size: auto" id="age_bau">
-              Please select your High School Grade!
-              0
-              <input id="a" type="range" name="a" value="50">
-              100 = <output name="result" for="a"></output>
-            </p>
-
-            <p></p>
-
-            <p></p>
-            <p style="font-size: auto">Payment Type:
-            <select name="Payment">
-              <option value="1">Credit Card</option>
-              <option value="2">Debit Card</option>
-              <option value="3">PayPal</option>
-            </select>
-            </p>
-            <p></p>
-            <textarea name="name" class="form-control;width:auto;" rows="8" cols="60" placeholder="Tell us what your expectations are with this Course"></textarea>
-            <p></p>
-            <input type="submit" class="btn btn-success btn btn-primary btn-lg active" name="" value="Sign Up!">
-          </div>
-        </form>
+          <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">@</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username" name="name" aria-label="Username" aria-describedby="basic-addon1">
       </div>
-    </div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" name="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2">@domain</span>
+        </div>
+      </div>
 
-</p>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">Age</span>
+        </div>
+        <input type="text" name="age" class="form-control" placeholder="Enter a Number" name="" value="">
+      </div>
 
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">Male</span>
+        </div>
+        <input type="radio" name="gender" value="">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon4">Female</span>
+        </div>
+        <input type="radio" name="gender" value="">
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon5">Password</span>
+        </div>
+        <input type="password" class="form-control" name="pswd" value="">
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon6">Confirm Password</span>
+        </div>
+        <input type="password" class="form-control" name="c_pswd" value="">
+      </div>
+
+      <div class="">
+        <button type="button" class="btn btn-success" name="submit" onclick="f1()">Submit</button>
+      </div>
+
+      <div class="">
+        <button type="button" class="btn btn-danger" name="clear" onclick="f2()">Clear</button>
+      </div>
+
+
+
+    </form>
+
+    <script type="text/javascript" src="forms2.js">
+
+    </script>
   </body>
 </html>
